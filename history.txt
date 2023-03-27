@@ -1,0 +1,922 @@
+:nemesis	:info	:add-server	"n5"
+2	:invoke	:read	nil
+:nemesis	:info	:add-server	nil
+2	:fail	:read	nil
+4	:invoke	:write	51
+2	:invoke	:write	77
+:nemesis	:info	:start-partition	{"n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}, "n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}}
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}, "n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}}]
+4	:fail	:write	51
+3	:invoke	:read	nil
+:nemesis	:info	:kill	("n5" "n4" "n3")
+4	:invoke	:read	nil
+2	:info	:write	77
+:nemesis	:info	:kill	{"n5" "", "n4" "", "n3" ""}
+3	:fail	:read	nil
+0	:invoke	:read	nil
+7	:invoke	:read	nil
+3	:invoke	:write	65
+1	:invoke	:write	1
+4	:info	:read	nil
+7	:info	:read	nil
+1	:fail	:write	1
+3	:fail	:write	65
+0	:info	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+9	:invoke	:read	nil
+9	:ok	:read	0
+3	:invoke	:read	nil
+5	:invoke	:read	nil
+3	:ok	:read	0
+5	:info	:read	nil
+9	:invoke	:write	72
+12	:invoke	:write	21
+12	:info	:write	21
+9	:ok	:write	72
+10	:invoke	:write	42
+17	:invoke	:write	85
+10	:info	:write	42
+:nemesis	:info	:add-server	"n4"
+15	:invoke	:read	nil
+3	:invoke	:read	nil
+15	:info	:read	nil
+17	:ok	:write	85
+3	:info	:read	nil
+:nemesis	:info	:add-server	"OK"
+20	:invoke	:read	nil
+:nemesis	:info	:add-server	"n5"
+1	:invoke	:read	nil
+20	:info	:read	nil
+:nemesis	:info	:add-server	nil
+1	:ok	:read	85
+17	:invoke	:write	53
+9	:invoke	:write	6
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" nil, "n2" nil, "n3" :started, "n4" :started, "n5" :started}
+17	:ok	:write	53
+9	:ok	:write	6
+9	:invoke	:write	97
+25	:invoke	:write	16
+:nemesis	:info	:start-partition	{"n2" #{"n5" "n3"}, "n1" #{"n5" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n2" "n1"}}
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n5" "n3"}, "n1" #{"n5" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n2" "n1"}}]
+17	:invoke	:write	58
+1	:invoke	:write	9
+17	:fail	:write	58
+:nemesis	:info	:remove-server	"n4"
+1	:info	:write	9
+:nemesis	:info	:remove-server	nil
+6	:invoke	:write	39
+:nemesis	:info	:remove-server	"n2"
+8	:invoke	:write	75
+6	:info	:write	39
+8	:fail	:write	75
+:nemesis	:info	:remove-server	nil
+25	:info	:write	16
+9	:info	:write	97
+30	:invoke	:read	nil
+11	:invoke	:read	nil
+:nemesis	:info	:kill	["n1" "n2" "n3" "n4" "n5"]
+30	:info	:read	nil
+:nemesis	:info	:kill	{"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}
+14	:invoke	:write	67
+17	:invoke	:write	18
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+35	:invoke	:read	nil
+:nemesis	:info	:add-server	"n5"
+8	:invoke	:read	nil
+:nemesis	:info	:add-server	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:remove-server	"n4"
+11	:info	:read	nil
+16	:invoke	:write	37
+35	:ok	:read	18
+17	:ok	:write	18
+8	:ok	:read	18
+14	:ok	:write	67
+:nemesis	:info	:remove-server	"OK"
+8	:invoke	:write	81
+14	:invoke	:write	29
+:nemesis	:info	:kill	("n4")
+:nemesis	:info	:kill	{"n4" ""}
+8	:fail	:write	81
+14	:fail	:write	29
+14	:invoke	:read	nil
+:nemesis	:info	:add-server	"n5"
+8	:invoke	:read	nil
+17	:invoke	:write	91
+35	:invoke	:write	62
+16	:info	:write	37
+14	:ok	:read	37
+35	:ok	:write	62
+:nemesis	:info	:add-server	"OK"
+8	:ok	:read	62
+17	:ok	:write	91
+21	:invoke	:write	50
+35	:invoke	:write	8
+:nemesis	:info	:start-partition	{"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}
+:nemesis	:info	:start-partition	[:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}]
+35	:ok	:write	8
+21	:ok	:write	50
+35	:invoke	:write	15
+:nemesis	:info	:add-server	"n4"
+21	:invoke	:write	71
+:nemesis	:info	:add-server	"OK"
+21	:ok	:write	71
+35	:ok	:write	15
+14	:invoke	:write	6
+8	:invoke	:write	93
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" nil, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+14	:ok	:write	6
+17	:invoke	:read	nil
+14	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+8	:ok	:write	93
+17	:ok	:read	93
+17	:invoke	:read	nil
+35	:invoke	:read	nil
+:nemesis	:info	:kill	("n1")
+14	:ok	:read	93
+:nemesis	:info	:kill	{"n1" ""}
+21	:invoke	:write	24
+14	:invoke	:write	61
+35	:ok	:read	93
+17	:ok	:read	93
+17	:invoke	:write	38
+8	:invoke	:write	14
+21	:ok	:write	24
+17	:ok	:write	38
+:nemesis	:info	:remove-server	"n4"
+8	:ok	:write	14
+14	:ok	:write	61
+8	:invoke	:write	73
+35	:invoke	:write	87
+:nemesis	:info	:remove-server	"OK"
+8	:ok	:write	73
+35	:ok	:write	87
+35	:invoke	:write	66
+14	:invoke	:write	86
+:nemesis	:info	:add-server	"n4"
+17	:invoke	:write	67
+21	:invoke	:write	66
+14	:ok	:write	86
+:nemesis	:info	:add-server	"OK"
+35	:ok	:write	66
+35	:invoke	:read	nil
+8	:invoke	:read	nil
+:nemesis	:info	:start-partition	{"n2" #{"n5" "n1"}, "n3" #{"n5" "n4"}, "n1" #{"n2" "n4"}, "n5" #{"n2" "n3"}, "n4" #{"n1" "n3"}}
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n5" "n1"}, "n3" #{"n5" "n4"}, "n1" #{"n2" "n4"}, "n5" #{"n2" "n3"}, "n4" #{"n1" "n3"}}]
+14	:invoke	:write	6
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+17	:ok	:write	67
+17	:invoke	:write	81
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:kill	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:kill	{"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}
+21	:info	:write	66
+:nemesis	:info	:remove-server	"n3"
+26	:invoke	:write	37
+35	:info	:read	nil
+40	:invoke	:read	nil
+:nemesis	:info	:remove-server	"OK"
+:nemesis	:info	:add-server	"n3"
+14	:info	:write	6
+19	:invoke	:read	nil
+8	:info	:read	nil
+40	:fail	:read	nil
+17	:info	:write	81
+19	:fail	:read	nil
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+40	:invoke	:read	nil
+19	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+40	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+19	:fail	:read	nil
+26	:info	:write	37
+40	:invoke	:write	46
+:nemesis	:info	:kill	("n4")
+13	:invoke	:write	99
+:nemesis	:info	:kill	{"n4" ""}
+19	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:add-server	"n3"
+31	:invoke	:read	nil
+19	:fail	:read	nil
+:nemesis	:info	:add-server	nil
+31	:fail	:read	nil
+22	:invoke	:write	38
+31	:invoke	:write	80
+40	:ok	:write	46
+13	:ok	:write	99
+31	:fail	:write	80
+19	:invoke	:write	67
+13	:invoke	:write	20
+:nemesis	:info	:remove-server	"n4"
+31	:invoke	:read	nil
+:nemesis	:info	:remove-server	nil
+:nemesis	:info	:remove-server	"n4"
+40	:invoke	:read	nil
+:nemesis	:info	:remove-server	"OK"
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" nil, "n2" :started, "n3" nil, "n4" nil, "n5" :started}
+:nemesis	:info	:add-server	"n3"
+22	:info	:write	38
+27	:invoke	:read	nil
+19	:info	:write	67
+:nemesis	:info	:add-server	nil
+:nemesis	:info	:start-partition	{"n3" #{"n1" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n3"}, "n1" #{"n2" "n3"}, "n5" #{"n2" "n4"}}
+27	:fail	:read	nil
+:nemesis	:info	:start-partition	[:isolated {"n3" #{"n1" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n3"}, "n1" #{"n2" "n3"}, "n5" #{"n2" "n4"}}]
+13	:info	:write	20
+31	:info	:read	nil
+40	:info	:read	nil
+36	:invoke	:read	nil
+18	:invoke	:read	nil
+:nemesis	:info	:kill	["n1" "n2" "n3" "n4" "n5"]
+36	:fail	:read	nil
+18	:fail	:read	nil
+18	:invoke	:read	nil
+24	:invoke	:read	nil
+:nemesis	:info	:kill	{"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}
+18	:fail	:read	nil
+24	:fail	:read	nil
+36	:invoke	:read	nil
+45	:invoke	:read	nil
+:nemesis	:info	:kill	("n2")
+:nemesis	:info	:kill	{"n2" ""}
+36	:fail	:read	nil
+45	:fail	:read	nil
+24	:invoke	:read	nil
+27	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+24	:fail	:read	nil
+27	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+18	:invoke	:read	nil
+45	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+18	:fail	:read	nil
+45	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+27	:invoke	:write	40
+:nemesis	:info	:start-partition	{"n2" #{"n1" "n3"}, "n4" #{"n1" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n4"}}
+18	:invoke	:write	26
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n1" "n3"}, "n4" #{"n1" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n4"}}]
+:nemesis	:info	:add-server	"n4"
+:nemesis	:info	:add-server	nil
+18	:fail	:write	26
+27	:fail	:write	40
+18	:invoke	:read	nil
+:nemesis	:info	:add-server	"n3"
+45	:invoke	:read	nil
+18	:fail	:read	nil
+:nemesis	:info	:add-server	nil
+45	:fail	:read	nil
+45	:invoke	:read	nil
+36	:invoke	:read	nil
+:nemesis	:info	:kill	("n1")
+:nemesis	:info	:kill	{"n1" ""}
+18	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+27	:invoke	:read	nil
+:nemesis	:info	:kill	("n5" "n3")
+24	:invoke	:write	87
+:nemesis	:info	:kill	{"n5" "", "n3" ""}
+:nemesis	:info	:start-partition	{"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}]
+:nemesis	:info	:start-partition	{"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}]
+:nemesis	:info	:add-server	"n4"
+:nemesis	:info	:add-server	nil
+:nemesis	:info	:add-server	"n4"
+36	:info	:read	nil
+41	:invoke	:write	78
+:nemesis	:info	:add-server	nil
+45	:info	:read	nil
+41	:fail	:write	78
+27	:info	:read	nil
+24	:info	:write	87
+18	:info	:read	nil
+:nemesis	:info	:add-server	"n4"
+41	:invoke	:read	nil
+:nemesis	:info	:add-server	nil
+41	:fail	:read	nil
+32	:invoke	:write	7
+29	:invoke	:write	63
+:nemesis	:info	:add-server	"n4"
+:nemesis	:info	:add-server	nil
+29	:fail	:write	63
+29	:invoke	:write	33
+41	:invoke	:write	29
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+32	:fail	:write	7
+41	:fail	:write	29
+29	:fail	:write	33
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+32	:invoke	:write	45
+:nemesis	:info	:stop-partition	nil
+29	:invoke	:write	91
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:add-server	"n3"
+32	:fail	:write	45
+:nemesis	:info	:add-server	nil
+29	:fail	:write	91
+32	:invoke	:read	nil
+41	:invoke	:read	nil
+29	:invoke	:read	nil
+50	:invoke	:read	nil
+:nemesis	:info	:kill	("n1" "n3" "n4")
+32	:fail	:read	nil
+41	:fail	:read	nil
+29	:fail	:read	nil
+:nemesis	:info	:kill	{"n1" "", "n3" "", "n4" ""}
+50	:fail	:read	nil
+50	:invoke	:write	31
+:nemesis	:info	:kill	("n4")
+29	:invoke	:write	82
+50	:fail	:write	31
+:nemesis	:info	:kill	{"n4" ""}
+29	:fail	:write	82
+32	:invoke	:write	53
+50	:invoke	:write	3
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	"server ID already in use"
+41	:invoke	:read	nil
+32	:ok	:write	53
+29	:invoke	:read	nil
+50	:ok	:write	3
+:nemesis	:info	:start-partition	{"n1" #{"n2" "n5" "n3"}, "n4" #{"n2" "n5" "n3"}, "n2" #{"n1" "n4"}, "n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}}
+:nemesis	:info	:start-partition	[:isolated {"n1" #{"n2" "n5" "n3"}, "n4" #{"n2" "n5" "n3"}, "n2" #{"n1" "n4"}, "n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}}]
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+41	:ok	:read	3
+50	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+32	:invoke	:read	nil
+29	:ok	:read	3
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+23	:invoke	:write	9
+29	:invoke	:write	4
+:nemesis	:info	:add-server	"n4"
+:nemesis	:info	:add-server	"OK"
+41	:invoke	:read	nil
+50	:info	:read	nil
+32	:info	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:stop-partition	nil
+37	:invoke	:read	nil
+:nemesis	:info	:stop-partition	:network-healed
+37	:fail	:read	nil
+55	:invoke	:read	nil
+37	:invoke	:read	nil
+:nemesis	:info	:kill	("n4")
+23	:info	:write	9
+29	:info	:write	4
+28	:invoke	:write	73
+:nemesis	:info	:kill	{"n4" ""}
+34	:invoke	:write	58
+:nemesis	:info	:kill	("n4")
+:nemesis	:info	:kill	{"n4" ""}
+:nemesis	:info	:remove-server	"n1"
+41	:info	:read	nil
+46	:invoke	:write	11
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+:nemesis	:info	:add-server	"n3"
+55	:info	:read	nil
+60	:invoke	:write	17
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+37	:info	:read	nil
+60	:fail	:write	17
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+28	:info	:write	73
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+34	:info	:write	58
+39	:invoke	:write	38
+:nemesis	:info	:kill	("n2" "n4")
+60	:invoke	:write	30
+33	:invoke	:write	2
+:nemesis	:info	:kill	{"n2" "", "n4" ""}
+60	:fail	:write	30
+:nemesis	:info	:start-partition	{"n1" #{"n5" "n3"}, "n4" #{"n2" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n1" "n4"}, "n2" #{"n5" "n4"}}
+60	:invoke	:write	43
+:nemesis	:info	:start-partition	[:isolated {"n1" #{"n5" "n3"}, "n4" #{"n2" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n1" "n4"}, "n2" #{"n5" "n4"}}]
+:nemesis	:info	:remove-server	"n5"
+46	:info	:write	11
+51	:invoke	:read	nil
+42	:invoke	:read	nil
+51	:fail	:read	nil
+42	:fail	:read	nil
+42	:invoke	:write	63
+51	:invoke	:write	32
+39	:info	:write	38
+44	:invoke	:read	nil
+44	:fail	:read	nil
+33	:info	:write	2
+:nemesis	:info	:remove-server	nil
+60	:info	:write	43
+65	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+44	:invoke	:read	nil
+44	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+38	:invoke	:write	44
+44	:invoke	:write	40
+42	:info	:write	63
+:nemesis	:info	:stop-partition	nil
+51	:info	:write	32
+44	:fail	:write	40
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:kill	("n2" "n4" "n5" "n3" "n1")
+47	:invoke	:write	29
+:nemesis	:info	:kill	{"n2" "", "n4" "", "n5" "", "n3" "", "n1" ""}
+44	:invoke	:write	78
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+56	:invoke	:write	84
+65	:info	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+70	:invoke	:write	39
+:nemesis	:info	:start-partition	{"n3" #{"n2" "n1"}, "n5" #{"n1" "n4"}, "n2" #{"n4" "n3"}, "n1" #{"n5" "n3"}, "n4" #{"n2" "n5"}}
+38	:info	:write	44
+:nemesis	:info	:start-partition	[:isolated {"n3" #{"n2" "n1"}, "n5" #{"n1" "n4"}, "n2" #{"n4" "n3"}, "n1" #{"n5" "n3"}, "n4" #{"n2" "n5"}}]
+43	:invoke	:write	43
+:nemesis	:info	:remove-server	"n1"
+47	:info	:write	29
+52	:invoke	:write	65
+44	:info	:write	78
+49	:invoke	:write	30
+56	:info	:write	84
+52	:fail	:write	65
+49	:fail	:write	30
+49	:invoke	:write	36
+61	:invoke	:write	96
+49	:fail	:write	36
+61	:fail	:write	96
+49	:invoke	:write	63
+52	:invoke	:write	5
+49	:fail	:write	63
+52	:fail	:write	5
+70	:info	:write	39
+:nemesis	:info	:remove-server	nil
+43	:info	:write	43
+61	:invoke	:read	nil
+48	:invoke	:read	nil
+:nemesis	:info	:kill	("n5" "n2" "n1")
+:nemesis	:info	:kill	{"n5" "", "n2" "", "n1" ""}
+61	:fail	:read	nil
+48	:fail	:read	nil
+48	:invoke	:write	61
+49	:invoke	:write	67
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:remove-server	"n2"
+61	:invoke	:write	0
+75	:invoke	:write	84
+:nemesis	:info	:remove-server	nil
+52	:invoke	:read	nil
+49	:fail	:write	67
+49	:invoke	:read	nil
+75	:fail	:write	84
+61	:fail	:write	0
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+75	:invoke	:write	48
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+61	:invoke	:write	86
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" nil, "n2" nil, "n3" nil, "n4" nil, "n5" nil}
+48	:info	:write	61
+52	:info	:read	nil
+49	:info	:read	nil
+75	:info	:write	48
+:nemesis	:info	:remove-server	"n4"
+57	:invoke	:write	19
+61	:info	:write	86
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+53	:invoke	:read	nil
+54	:invoke	:read	nil
+:nemesis	:info	:kill	("n1")
+:nemesis	:info	:kill	{"n1" ""}
+66	:invoke	:write	17
+:nemesis	:info	:start-partition	{"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}
+80	:invoke	:write	80
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}]
+:nemesis	:info	:add-server	"n3"
+57	:info	:write	19
+62	:invoke	:read	nil
+62	:fail	:read	nil
+53	:info	:read	nil
+54	:info	:read	nil
+:nemesis	:info	:add-server	nil
+66	:info	:write	17
+80	:info	:write	80
+58	:invoke	:write	15
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+59	:invoke	:write	87
+58	:fail	:write	15
+59	:fail	:write	87
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+71	:invoke	:write	7
+71	:fail	:write	7
+85	:invoke	:write	14
+:nemesis	:info	:stop-partition	nil
+62	:invoke	:write	75
+:nemesis	:info	:stop-partition	:network-healed
+85	:fail	:write	14
+:nemesis	:info	:remove-server	"n5"
+62	:fail	:write	75
+:nemesis	:info	:remove-server	nil
+71	:invoke	:write	89
+58	:invoke	:write	1
+71	:fail	:write	89
+58	:fail	:write	1
+58	:invoke	:read	nil
+85	:invoke	:read	nil
+58	:fail	:read	nil
+85	:fail	:read	nil
+:nemesis	:info	:kill	("n1" "n4" "n3")
+:nemesis	:info	:kill	{"n1" "", "n4" "", "n3" ""}
+85	:invoke	:read	nil
+59	:invoke	:read	nil
+:nemesis	:info	:kill	["n1" "n2" "n3" "n4" "n5"]
+85	:fail	:read	nil
+:nemesis	:info	:kill	{"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}
+59	:fail	:read	nil
+58	:invoke	:read	nil
+62	:invoke	:read	nil
+:nemesis	:info	:start-partition	{"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}]
+62	:fail	:read	nil
+71	:invoke	:read	nil
+:nemesis	:info	:add-server	"n3"
+62	:invoke	:read	nil
+59	:invoke	:write	34
+85	:invoke	:write	87
+:nemesis	:info	:add-server	nil
+59	:fail	:write	34
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+59	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+58	:info	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+63	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+71	:info	:read	nil
+76	:invoke	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:start-partition	{"n1" #{"n2" "n5" "n4" "n3"}, "n2" #{"n1"}, "n5" #{"n1"}, "n4" #{"n1"}, "n3" #{"n1"}}
+85	:info	:write	87
+:nemesis	:info	:start-partition	[:isolated {"n1" #{"n2" "n5" "n4" "n3"}, "n2" #{"n1"}, "n5" #{"n1"}, "n4" #{"n1"}, "n3" #{"n1"}}]
+62	:info	:read	nil
+59	:info	:read	nil
+90	:invoke	:write	36
+:nemesis	:info	:kill	("n5" "n3" "n2")
+67	:invoke	:write	62
+:nemesis	:info	:kill	{"n5" "", "n3" "", "n2" ""}
+:nemesis	:info	:add-server	"n3"
+67	:fail	:write	62
+:nemesis	:info	:add-server	nil
+67	:invoke	:write	54
+:nemesis	:info	:add-server	"n3"
+67	:fail	:write	54
+67	:invoke	:write	25
+63	:info	:read	nil
+64	:invoke	:read	nil
+67	:fail	:write	25
+67	:invoke	:read	nil
+64	:fail	:read	nil
+67	:fail	:read	nil
+76	:info	:read	nil
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+68	:invoke	:read	nil
+68	:fail	:read	nil
+64	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+64	:fail	:read	nil
+:nemesis	:info	:stop-partition	:network-healed
+90	:info	:write	36
+81	:invoke	:read	nil
+64	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:remove-server	"n4"
+68	:invoke	:write	60
+67	:invoke	:write	49
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+95	:invoke	:read	nil
+:nemesis	:info	:remove-server	"n4"
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:kill	("n3" "n1")
+:nemesis	:info	:kill	{"n3" "", "n1" ""}
+:nemesis	:info	:remove-server	"n5"
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+:nemesis	:info	:start-partition	{"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}
+81	:info	:read	nil
+86	:invoke	:read	nil
+:nemesis	:info	:start-partition	[:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}]
+64	:info	:read	nil
+68	:info	:write	60
+67	:info	:write	49
+:nemesis	:info	:add-server	"n3"
+69	:invoke	:read	nil
+73	:invoke	:read	nil
+69	:fail	:read	nil
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+95	:info	:read	nil
+73	:fail	:read	nil
+72	:invoke	:write	10
+:nemesis	:info	:add-server	"n3"
+69	:invoke	:write	61
+:nemesis	:info	:add-server	nil
+86	:info	:read	nil
+69	:fail	:write	61
+:nemesis	:info	:add-server	"n3"
+91	:invoke	:read	nil
+69	:invoke	:read	nil
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+72	:info	:write	10
+100	:invoke	:write	68
+73	:invoke	:write	78
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+91	:info	:read	nil
+69	:info	:read	nil
+74	:invoke	:write	35
+77	:invoke	:write	20
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+74	:fail	:write	35
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+96	:invoke	:write	42
+:nemesis	:info	:remove-server	"n1"
+74	:invoke	:write	11
+96	:fail	:write	42
+74	:fail	:write	11
+:nemesis	:info	:remove-server	nil
+100	:info	:write	68
+73	:info	:write	78
+74	:invoke	:write	36
+:nemesis	:info	:kill	("n4" "n5")
+96	:invoke	:write	38
+:nemesis	:info	:kill	{"n4" "", "n5" ""}
+96	:fail	:write	38
+96	:invoke	:write	61
+:nemesis	:info	:remove-server	"n4"
+105	:invoke	:write	4
+96	:fail	:write	61
+96	:invoke	:write	49
+78	:invoke	:write	63
+77	:info	:write	20
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+82	:invoke	:write	79
+:nemesis	:info	:start-partition	{"n2" #{"n1" "n3"}, "n5" #{"n4" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n5"}, "n4" #{"n5" "n1"}}
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n1" "n3"}, "n5" #{"n4" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n5"}, "n4" #{"n5" "n1"}}]
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+74	:info	:write	36
+79	:invoke	:write	94
+:nemesis	:info	:start	{"n1" nil, "n2" nil, "n3" nil, "n4" nil, "n5" nil}
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	nil
+105	:info	:write	4
+:nemesis	:info	:kill	["n1" "n2" "n3" "n4" "n5"]
+96	:info	:write	49
+:nemesis	:info	:kill	{"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}
+110	:invoke	:read	nil
+101	:invoke	:read	nil
+:nemesis	:info	:kill	("n3")
+78	:info	:write	63
+110	:fail	:read	nil
+101	:fail	:read	nil
+:nemesis	:info	:kill	{"n3" ""}
+83	:invoke	:read	nil
+110	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+83	:fail	:read	nil
+110	:fail	:read	nil
+82	:info	:write	79
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+79	:info	:write	94
+83	:invoke	:read	nil
+110	:invoke	:read	nil
+:nemesis	:info	:kill	("n1" "n2")
+:nemesis	:info	:kill	{"n1" "", "n2" ""}
+87	:invoke	:read	nil
+:nemesis	:info	:kill	("n4" "n5" "n1" "n2" "n3")
+84	:invoke	:read	nil
+:nemesis	:info	:kill	{"n4" "", "n5" "", "n1" "", "n2" "", "n3" ""}
+84	:fail	:read	nil
+101	:invoke	:write	83
+84	:invoke	:write	42
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+:nemesis	:info	:remove-server	"n5"
+:nemesis	:info	:remove-server	nil
+83	:info	:read	nil
+:nemesis	:info	:start-partition	{"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}
+:nemesis	:info	:start-partition	[:isolated {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}]
+:nemesis	:info	:start-partition	{"n1" #{"n2" "n5" "n4"}, "n3" #{"n2" "n5" "n4"}, "n2" #{"n1" "n3"}, "n5" #{"n1" "n3"}, "n4" #{"n1" "n3"}}
+110	:info	:read	nil
+:nemesis	:info	:start-partition	[:isolated {"n1" #{"n2" "n5" "n4"}, "n3" #{"n2" "n5" "n4"}, "n2" #{"n1" "n3"}, "n5" #{"n1" "n3"}, "n4" #{"n1" "n3"}}]
+115	:invoke	:read	nil
+88	:invoke	:read	nil
+87	:info	:read	nil
+101	:info	:write	83
+84	:info	:write	42
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+106	:invoke	:write	9
+106	:fail	:write	9
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+115	:info	:read	nil
+88	:info	:read	nil
+120	:invoke	:write	35
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+106	:invoke	:write	32
+120	:fail	:write	35
+106	:fail	:write	32
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+120	:invoke	:read	nil
+92	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+120	:fail	:read	nil
+92	:fail	:read	nil
+92	:invoke	:read	nil
+89	:invoke	:read	nil
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	nil
+89	:fail	:read	nil
+92	:fail	:read	nil
+106	:invoke	:read	nil
+93	:invoke	:read	nil
+:nemesis	:info	:kill	("n2")
+:nemesis	:info	:kill	{"n2" ""}
+106	:fail	:read	nil
+93	:fail	:read	nil
+92	:invoke	:write	65
+:nemesis	:info	:remove-server	"n2"
+92	:fail	:write	65
+93	:invoke	:write	13
+:nemesis	:info	:remove-server	nil
+106	:invoke	:write	58
+92	:invoke	:write	90
+93	:fail	:write	13
+106	:fail	:write	58
+:nemesis	:info	:start-partition	{"n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}}]
+106	:invoke	:write	22
+:nemesis	:info	:start-partition	{"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}
+:nemesis	:info	:start-partition	[:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}]
+93	:invoke	:write	24
+89	:invoke	:read	nil
+120	:invoke	:read	nil
+92	:info	:write	90
+106	:info	:write	22
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+97	:invoke	:read	nil
+111	:invoke	:read	nil
+97	:fail	:read	nil
+97	:invoke	:read	nil
+93	:info	:write	24
+111	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+98	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+111	:invoke	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" nil, "n4" :started, "n5" :started}
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+:nemesis	:info	:kill	("n1")
+:nemesis	:info	:kill	{"n1" ""}
+:nemesis	:info	:remove-server	"n5"
+89	:info	:read	nil
+94	:invoke	:write	62
+120	:info	:read	nil
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+94	:fail	:write	62
+94	:invoke	:write	73
+125	:invoke	:write	67
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+97	:info	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" nil, "n4" :started, "n5" :started}
+111	:info	:read	nil
+102	:invoke	:read	nil
+116	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+98	:info	:read	nil
+116	:fail	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" nil, "n3" nil, "n4" nil, "n5" :started}
+125	:info	:write	67
+116	:invoke	:read	nil
+:nemesis	:info	:add-server	"n3"
+130	:invoke	:read	nil
+94	:info	:write	73
+:nemesis	:info	:add-server	nil
+:nemesis	:info	:start-partition	{"n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}, "n1" #{"n5" "n3"}, "n4" #{"n5" "n3"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}, "n1" #{"n5" "n3"}, "n4" #{"n5" "n3"}}]
+103	:invoke	:read	nil
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+:nemesis	:info	:stop-partition	nil
+:nemesis	:info	:stop-partition	:network-healed
+99	:invoke	:read	nil
+102	:info	:read	nil
+:nemesis	:info	:remove-server	"n5"
+99	:fail	:read	nil
+99	:invoke	:read	nil
+107	:invoke	:write	35
+107	:fail	:write	35
+:nemesis	:info	:remove-server	"a configuration change is already in progress"
+107	:invoke	:write	26
+:nemesis	:info	:add-server	"n3"
+116	:info	:read	nil
+121	:invoke	:write	2
+130	:info	:read	nil
+103	:info	:read	nil
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+135	:invoke	:write	66
+:nemesis	:info	:start-partition	{"n3" #{"n2" "n5" "n1" "n4"}, "n2" #{"n3"}, "n5" #{"n3"}, "n1" #{"n3"}, "n4" #{"n3"}}
+:nemesis	:info	:start-partition	[:isolated {"n3" #{"n2" "n5" "n1" "n4"}, "n2" #{"n3"}, "n5" #{"n3"}, "n1" #{"n3"}, "n4" #{"n3"}}]
+:nemesis	:info	:kill	("n3")
+108	:invoke	:write	54
+:nemesis	:info	:kill	{"n3" ""}
+108	:fail	:write	54
+99	:info	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+108	:invoke	:write	80
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+104	:invoke	:read	nil
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+104	:fail	:read	nil
+104	:invoke	:read	nil
+107	:info	:write	26
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+121	:info	:write	2
+112	:invoke	:write	31
+135	:info	:write	66
+:nemesis	:info	:stop-partition	nil
+140	:invoke	:write	26
+:nemesis	:info	:stop-partition	:network-healed
+140	:fail	:write	26
+:nemesis	:info	:kill	("n3" "n2" "n4")
+108	:info	:write	80
+:nemesis	:info	:kill	{"n3" "", "n2" "", "n4" ""}
+113	:invoke	:read	nil
+140	:invoke	:read	nil
+:nemesis	:info	:add-server	"n3"
+:nemesis	:info	:add-server	"a configuration change is already in progress"
+104	:info	:read	nil
+126	:invoke	:read	nil
+:nemesis	:info	:kill	("n2" "n3" "n1")
+126	:fail	:read	nil
+126	:invoke	:read	nil
+:nemesis	:info	:kill	{"n2" "", "n3" "", "n1" ""}
+:nemesis	:info	:start-partition	{"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}
+:nemesis	:info	:start-partition	[:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}]
+109	:invoke	:write	76
+112	:info	:write	31
+109	:fail	:write	76
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+117	:invoke	:write	84
+113	:info	:read	nil
+140	:info	:read	nil
+117	:fail	:write	84
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+118	:invoke	:write	39
+118	:fail	:write	39
+:nemesis	:info	:start	["n1" "n2" "n3" "n4" "n5"]
+117	:invoke	:write	14
+109	:invoke	:read	nil
+117	:fail	:write	14
+109	:fail	:read	nil
+117	:invoke	:read	nil
+:nemesis	:info	:start	{"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}
+126	:info	:read	nil
+145	:invoke	:read	nil
+117	:fail	:read	nil
+:nemesis	:info	:remove-server	"n1"
+145	:fail	:read	nil
+109	:invoke	:read	nil
+:nemesis	:info	:remove-server	nil
+109	:info	:read	nil

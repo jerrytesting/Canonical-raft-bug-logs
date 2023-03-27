@@ -1,0 +1,922 @@
+{:type :info, :f :add-server, :value "n5", :execute-via "n2", :time 1334983657, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 1348382454, :process 2, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n2", :time 1529343172, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 1595250501, :process 2, :source :generator}
+{:type :invoke, :f :write, :value 51, :time 2108734689, :process 4, :source :generator}
+{:type :invoke, :f :write, :value 77, :time 2118073417, :process 2, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}, "n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}}, :time 2121465497, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}, "n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}}], :time 2131079545, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 51, :time 2314781208, :process 4, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 2565809702, :process 3, :source :generator}
+{:type :info, :f :kill, :value ("n5" "n4" "n3"), :time 2573073782, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 2587339006, :process 4, :source :generator}
+{:type :info, :f :write, :value 77, :time 2607442466, :process 2, :source :generator}
+{:type :info, :f :kill, :value {"n5" "", "n4" "", "n3" ""}, :time 2786213011, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 2818844545, :process 3, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 2883201182, :process 0, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 2886015543, :process 7, :source :generator}
+{:type :invoke, :f :write, :value 65, :time 2997789677, :process 3, :source :generator}
+{:type :invoke, :f :write, :value 1, :time 3000810828, :process 1, :source :generator}
+{:type :info, :f :read, :value nil, :time 3087187822, :process 4, :source :generator}
+{:type :info, :f :read, :value nil, :time 3147220151, :process 7, :source :generator}
+{:type :fail, :f :write, :value 1, :time 3290825109, :process 1, :source :generator}
+{:type :fail, :f :write, :value 65, :time 3362844480, :process 3, :source :generator}
+{:type :info, :f :read, :value nil, :time 3431422519, :process 0, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 4446284352, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 4461170166, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 4461453531, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 4485351210, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 4485531486, :process 9, :source :generator}
+{:type :ok, :f :read, :value 0, :time 4875852130, :process 9, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 4952591737, :process 3, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 5025473276, :process 5, :source :generator}
+{:type :ok, :f :read, :value 0, :time 5130121548, :process 3, :source :generator}
+{:type :info, :f :read, :value nil, :time 5249728171, :process 5, :source :generator}
+{:type :invoke, :f :write, :value 72, :time 5314257512, :process 9, :source :generator}
+{:type :invoke, :f :write, :value 21, :time 5340988243, :process 12, :source :generator}
+{:type :info, :f :write, :value 21, :time 5611302239, :process 12, :source :generator}
+{:type :ok, :f :write, :value 72, :time 6027082422, :process 9, :source :generator}
+{:type :invoke, :f :write, :value 42, :time 6621558970, :process 10, :source :generator}
+{:type :invoke, :f :write, :value 85, :time 6630665484, :process 17, :source :generator}
+{:type :info, :f :write, :value 42, :time 6839022547, :process 10, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n2", :time 6952989070, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 7060064029, :process 15, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 7062388335, :process 3, :source :generator}
+{:type :info, :f :read, :value nil, :time 7270998184, :process 15, :source :generator}
+{:type :ok, :f :write, :value 85, :time 7292204019, :process 17, :source :generator}
+{:type :info, :f :read, :value nil, :time 7335080056, :process 3, :source :generator}
+{:type :info, :f :add-server, :value "OK", :execute-via "n2", :time 7370089766, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 8398328506, :process 20, :source :generator}
+{:type :info, :f :add-server, :value "n5", :execute-via "n1", :time 8401424878, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 8406246608, :process 1, :source :generator}
+{:type :info, :f :read, :value nil, :time 8614949605, :process 20, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 8759286627, :process :nemesis, :source :generator}
+{:type :ok, :f :read, :value 85, :time 8779368053, :process 1, :source :generator}
+{:type :invoke, :f :write, :value 53, :time 10286940603, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 6, :time 10372191234, :process 9, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 10431956937, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" nil, "n2" nil, "n3" :started, "n4" :started, "n5" :started}, :time 10904453472, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 53, :time 11389472162, :process 17, :source :generator}
+{:type :ok, :f :write, :value 6, :time 11419457819, :process 9, :source :generator}
+{:type :invoke, :f :write, :value 97, :time 11686339048, :process 9, :source :generator}
+{:type :invoke, :f :write, :value 16, :time 11688813513, :process 25, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n5" "n3"}, "n1" #{"n5" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n2" "n1"}}, :time 11692309297, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n5" "n3"}, "n1" #{"n5" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n2" "n1"}}], :time 11700127837, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 58, :time 12930208714, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 9, :time 13024163648, :process 1, :source :generator}
+{:type :fail, :f :write, :value 58, :time 13178711521, :process 17, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n2", :time 13236234466, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 9, :time 13329926856, :process 1, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n2", :time 13442897352, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 39, :time 14049183071, :process 6, :source :generator}
+{:type :info, :f :remove-server, :value "n2", :execute-via "n4", :time 14054769635, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 75, :time 14065557564, :process 8, :source :generator}
+{:type :info, :f :write, :value 39, :time 14275158152, :process 6, :source :generator}
+{:type :fail, :f :write, :value 75, :time 14330718262, :process 8, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n4", :time 14386660714, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 16, :time 14914393493, :process 25, :source :generator}
+{:type :info, :f :write, :value 97, :time 14946343884, :process 9, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 15104000235, :process 30, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 15108945110, :process 11, :source :generator}
+{:type :info, :f :kill, :value ["n1" "n2" "n3" "n4" "n5"], :time 15111659778, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 15312494968, :process 30, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}, :time 15315744314, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 67, :time 15669408865, :process 14, :source :generator}
+{:type :invoke, :f :write, :value 18, :time 15723112164, :process 17, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 15730781860, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 15739234005, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 17418501597, :process 35, :source :generator}
+{:type :info, :f :add-server, :value "n5", :execute-via "n1", :time 17440185437, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 17530063208, :process 8, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 17718724047, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 17718795228, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 18133884046, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n3", :time 18133945273, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 18345269985, :process 11, :source :generator}
+{:type :invoke, :f :write, :value 37, :time 18345354878, :process 16, :source :generator}
+{:type :ok, :f :read, :value 18, :time 18731647450, :process 35, :source :generator}
+{:type :ok, :f :write, :value 18, :time 18738674444, :process 17, :source :generator}
+{:type :ok, :f :read, :value 18, :time 18760822521, :process 8, :source :generator}
+{:type :ok, :f :write, :value 67, :time 18796895409, :process 14, :source :generator}
+{:type :info, :f :remove-server, :value "OK", :execute-via "n3", :time 18800909330, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 81, :time 19974157495, :process 8, :source :generator}
+{:type :invoke, :f :write, :value 29, :time 19982671347, :process 14, :source :generator}
+{:type :info, :f :kill, :value ("n4"), :time 19985798969, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n4" ""}, :time 20188970954, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 81, :time 20397042584, :process 8, :source :generator}
+{:type :fail, :f :write, :value 29, :time 20611006502, :process 14, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 21588961255, :process 14, :source :generator}
+{:type :info, :f :add-server, :value "n5", :execute-via "n1", :time 21598414617, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 21608118047, :process 8, :source :generator}
+{:type :invoke, :f :write, :value 91, :time 21682076784, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 62, :time 21731588851, :process 35, :source :generator}
+{:type :info, :f :write, :value 37, :time 21742541452, :process 16, :source :generator}
+{:type :ok, :f :read, :value 37, :time 21874582005, :process 14, :source :generator}
+{:type :ok, :f :write, :value 62, :time 22166655158, :process 35, :source :generator}
+{:type :info, :f :add-server, :value "OK", :execute-via "n1", :time 22377500940, :process :nemesis, :source :generator}
+{:type :ok, :f :read, :value 62, :time 22503850863, :process 8, :source :generator}
+{:type :ok, :f :write, :value 91, :time 22639085910, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 50, :time 23383121576, :process 21, :source :generator}
+{:type :invoke, :f :write, :value 8, :time 23598156841, :process 35, :source :generator}
+{:type :info, :f :start-partition, :value {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}, :time 23703071968, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}], :time 23905593723, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 8, :time 24374922605, :process 35, :source :generator}
+{:type :ok, :f :write, :value 50, :time 24602217605, :process 21, :source :generator}
+{:type :invoke, :f :write, :value 15, :time 25581472323, :process 35, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n3", :time 25583892071, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 71, :time 25586293669, :process 21, :source :generator}
+{:type :info, :f :add-server, :value "OK", :execute-via "n3", :time 25938947598, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 71, :time 26071113655, :process 21, :source :generator}
+{:type :ok, :f :write, :value 15, :time 26315034373, :process 35, :source :generator}
+{:type :invoke, :f :write, :value 6, :time 27453787296, :process 14, :source :generator}
+{:type :invoke, :f :write, :value 93, :time 27501491208, :process 8, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 27503961283, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" nil, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 27908607954, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 6, :time 28125086586, :process 14, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 28169882664, :process 17, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 28213064055, :process 14, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 28218855473, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 28225271402, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 93, :time 28382539633, :process 8, :source :generator}
+{:type :ok, :f :read, :value 93, :time 28502838928, :process 17, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 28982335986, :process 17, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 29038913881, :process 35, :source :generator}
+{:type :info, :f :kill, :value ("n1"), :time 29055614024, :process :nemesis, :source :generator}
+{:type :ok, :f :read, :value 93, :time 29100150057, :process 14, :source :generator}
+{:type :info, :f :kill, :value {"n1" ""}, :time 29259849836, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 24, :time 29607339913, :process 21, :source :generator}
+{:type :invoke, :f :write, :value 61, :time 29663969626, :process 14, :source :generator}
+{:type :ok, :f :read, :value 93, :time 29735016279, :process 35, :source :generator}
+{:type :ok, :f :read, :value 93, :time 29747044486, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 38, :time 29764079161, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 14, :time 29859718045, :process 8, :source :generator}
+{:type :ok, :f :write, :value 24, :time 29974623116, :process 21, :source :generator}
+{:type :ok, :f :write, :value 38, :time 30723600625, :process 17, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n2", :time 30763442920, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 14, :time 30830463645, :process 8, :source :generator}
+{:type :ok, :f :write, :value 61, :time 30855823790, :process 14, :source :generator}
+{:type :invoke, :f :write, :value 73, :time 30875856930, :process 8, :source :generator}
+{:type :invoke, :f :write, :value 87, :time 31125027043, :process 35, :source :generator}
+{:type :info, :f :remove-server, :value "OK", :execute-via "n2", :time 31447069343, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 73, :time 32375669997, :process 8, :source :generator}
+{:type :ok, :f :write, :value 87, :time 32399321952, :process 35, :source :generator}
+{:type :invoke, :f :write, :value 66, :time 33101873715, :process 35, :source :generator}
+{:type :invoke, :f :write, :value 86, :time 33106607558, :process 14, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n5", :time 33112951393, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 67, :time 33452937742, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 66, :time 33486793506, :process 21, :source :generator}
+{:type :ok, :f :write, :value 86, :time 33539269261, :process 14, :source :generator}
+{:type :info, :f :add-server, :value "OK", :execute-via "n5", :time 33699824909, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 66, :time 33834979953, :process 35, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 34053122757, :process 35, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 34124932227, :process 8, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n5" "n1"}, "n3" #{"n5" "n4"}, "n1" #{"n2" "n4"}, "n5" #{"n2" "n3"}, "n4" #{"n1" "n3"}}, :time 34127753685, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n5" "n1"}, "n3" #{"n5" "n4"}, "n1" #{"n2" "n4"}, "n5" #{"n2" "n3"}, "n4" #{"n1" "n3"}}], :time 34134120397, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 6, :time 34141268734, :process 14, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 34145594310, :process :nemesis, :source :generator}
+{:type :ok, :f :write, :value 67, :time 34163577918, :process 17, :source :generator}
+{:type :invoke, :f :write, :value 81, :time 34163666653, :process 17, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 34550001715, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value ["n1" "n2" "n3" "n4" "n5"], :time 34550046813, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}, :time 34757731854, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 66, :time 36878244135, :process 21, :source :generator}
+{:type :info, :f :remove-server, :value "n3", :execute-via "n2", :time 36880334984, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 37, :time 36883087923, :process 26, :source :generator}
+{:type :info, :f :read, :value nil, :time 37390392342, :process 35, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 37474036642, :process 40, :source :generator}
+{:type :info, :f :remove-server, :value "OK", :execute-via "n2", :time 37487237515, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 37487290139, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 6, :time 37539675612, :process 14, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 37539754747, :process 19, :source :generator}
+{:type :info, :f :read, :value nil, :time 37642423120, :process 8, :source :generator}
+{:type :fail, :f :read, :value nil, :time 37652285285, :process 40, :source :generator}
+{:type :info, :f :write, :value 81, :time 37686741859, :process 17, :source :generator}
+{:type :fail, :f :read, :value nil, :time 37806808610, :process 19, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n1", :time 37954046446, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 39311692839, :process 40, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 39365994227, :process 19, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 39435217278, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 39566706314, :process 40, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 39899051945, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 40054797350, :process 19, :source :generator}
+{:type :info, :f :write, :value 37, :time 40425510797, :process 26, :source :generator}
+{:type :invoke, :f :write, :value 46, :time 41180234813, :process 40, :source :generator}
+{:type :info, :f :kill, :value ("n4"), :time 41188366698, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 99, :time 41193513746, :process 13, :source :generator}
+{:type :info, :f :kill, :value {"n4" ""}, :time 41394118771, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 42298083284, :process 19, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 42393182913, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 42396553240, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 42396597545, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 42399061376, :process 31, :source :generator}
+{:type :fail, :f :read, :value nil, :time 42481921146, :process 19, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 42624647639, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 42678548082, :process 31, :source :generator}
+{:type :invoke, :f :write, :value 38, :time 44062949436, :process 22, :source :generator}
+{:type :invoke, :f :write, :value 80, :time 44066313911, :process 31, :source :generator}
+{:type :ok, :f :write, :value 46, :time 44281288985, :process 40, :source :generator}
+{:type :ok, :f :write, :value 99, :time 44381364223, :process 13, :source :generator}
+{:type :fail, :f :write, :value 80, :time 44430885985, :process 31, :source :generator}
+{:type :invoke, :f :write, :value 67, :time 44517201594, :process 19, :source :generator}
+{:type :invoke, :f :write, :value 20, :time 44519433877, :process 13, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n1", :time 44619548473, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 44833652741, :process 31, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n1", :time 44897189167, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n2", :time 44897246310, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 44901648089, :process 40, :source :generator}
+{:type :info, :f :remove-server, :value "OK", :execute-via "n2", :time 45590638938, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 46053083487, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 46456842026, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 46456910643, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" nil, "n2" :started, "n3" nil, "n4" nil, "n5" :started}, :time 47083973200, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 47084019183, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 38, :time 47501632382, :process 22, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 47501707860, :process 27, :source :generator}
+{:type :info, :f :write, :value 67, :time 47613432625, :process 19, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n2", :time 47613502190, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n3" #{"n1" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n3"}, "n1" #{"n2" "n3"}, "n5" #{"n2" "n4"}}, :time 47613523197, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 47964283536, :process 27, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n3" #{"n1" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n3"}, "n1" #{"n2" "n3"}, "n5" #{"n2" "n4"}}], :time 47964354097, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 20, :time 48033709166, :process 13, :source :generator}
+{:type :info, :f :read, :value nil, :time 48289117663, :process 31, :source :generator}
+{:type :info, :f :read, :value nil, :time 48413739745, :process 40, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 48714818874, :process 36, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 48718212207, :process 18, :source :generator}
+{:type :info, :f :kill, :value ["n1" "n2" "n3" "n4" "n5"], :time 48915539477, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 48995860688, :process 36, :source :generator}
+{:type :fail, :f :read, :value nil, :time 48995941584, :process 18, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 49001859380, :process 18, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 49003860274, :process 24, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}, :time 49119472201, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 49210855885, :process 18, :source :generator}
+{:type :fail, :f :read, :value nil, :time 49270730595, :process 24, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 49747840675, :process 36, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 49756852919, :process 45, :source :generator}
+{:type :info, :f :kill, :value ("n2"), :time 49769706160, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n2" ""}, :time 49972972077, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 49982690665, :process 36, :source :generator}
+{:type :fail, :f :read, :value nil, :time 50058743817, :process 45, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 51323587880, :process 24, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 51329977141, :process 27, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 51334581927, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 51337461292, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 51495833816, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 51558611037, :process 24, :source :generator}
+{:type :fail, :f :read, :value nil, :time 51618812641, :process 27, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 51901572164, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 52342821832, :process 18, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 52355828429, :process 45, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 52381478688, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 52602604360, :process 18, :source :generator}
+{:type :fail, :f :read, :value nil, :time 52628055972, :process 45, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 52793876477, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 40, :time 53491295400, :process 27, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n1" "n3"}, "n4" #{"n1" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n4"}}, :time 53494074147, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 26, :time 53497359196, :process 18, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n1" "n3"}, "n4" #{"n1" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n4"}}], :time 53500965801, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n1", :time 53501017059, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 53750472202, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 26, :time 53810624823, :process 18, :source :generator}
+{:type :fail, :f :write, :value 40, :time 53842896531, :process 27, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 54855762687, :process 18, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 54890446012, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 54984033519, :process 45, :source :generator}
+{:type :fail, :f :read, :value nil, :time 55095228985, :process 18, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 55166734470, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 55230668638, :process 45, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 56232750626, :process 45, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 56234815495, :process 36, :source :generator}
+{:type :info, :f :kill, :value ("n1"), :time 56949927615, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" ""}, :time 57154325594, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 57390244263, :process 18, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 57393390802, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 57401606345, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 57401705328, :process 27, :source :generator}
+{:type :info, :f :kill, :value ("n5" "n3"), :time 57406986064, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 87, :time 57454792220, :process 24, :source :generator}
+{:type :info, :f :kill, :value {"n5" "", "n3" ""}, :time 57615070245, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}, :time 57634460857, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}], :time 57637808534, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}, :time 57637846620, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}], :time 57642968163, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n5", :time 59031256472, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n5", :time 59298448893, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n2", :time 59298496439, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 59434381610, :process 36, :source :generator}
+{:type :invoke, :f :write, :value 78, :time 59434465048, :process 41, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n2", :time 59506826514, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 59643533214, :process 45, :source :generator}
+{:type :fail, :f :write, :value 78, :time 59654604251, :process 41, :source :generator}
+{:type :info, :f :read, :value nil, :time 60727125868, :process 27, :source :generator}
+{:type :info, :f :write, :value 87, :time 60810172122, :process 24, :source :generator}
+{:type :info, :f :read, :value nil, :time 60830418665, :process 18, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n2", :time 61990834437, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 62028806761, :process 41, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n2", :time 62194425038, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 62258707631, :process 41, :source :generator}
+{:type :invoke, :f :write, :value 7, :time 64020993176, :process 32, :source :generator}
+{:type :invoke, :f :write, :value 63, :time 64023843948, :process 29, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n1", :time 64027070914, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 64243113792, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 63, :time 64351060343, :process 29, :source :generator}
+{:type :invoke, :f :write, :value 33, :time 64408865200, :process 29, :source :generator}
+{:type :invoke, :f :write, :value 29, :time 64411039793, :process 41, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 64414362710, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 7, :time 64426653299, :process 32, :source :generator}
+{:type :fail, :f :write, :value 29, :time 64666609159, :process 41, :source :generator}
+{:type :fail, :f :write, :value 33, :time 64722723406, :process 29, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 64819150431, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 45, :time 65344824970, :process 32, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 65351706489, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 91, :time 65377124465, :process 29, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 65391749600, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 65391832395, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 45, :time 65548011380, :process 32, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 65657891251, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 91, :time 65729416934, :process 29, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 65742597731, :process 32, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 65842812534, :process 41, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 65918284030, :process 29, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 65919715611, :process 50, :source :generator}
+{:type :info, :f :kill, :value ("n1" "n3" "n4"), :time 65936060262, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 65970598929, :process 32, :source :generator}
+{:type :fail, :f :read, :value nil, :time 66054795043, :process 41, :source :generator}
+{:type :fail, :f :read, :value nil, :time 66130649968, :process 29, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n3" "", "n4" ""}, :time 66139006107, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 66202666241, :process 50, :source :generator}
+{:type :invoke, :f :write, :value 31, :time 67665594227, :process 50, :source :generator}
+{:type :info, :f :kill, :value ("n4"), :time 67769177294, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 82, :time 67773169613, :process 29, :source :generator}
+{:type :fail, :f :write, :value 31, :time 67930639985, :process 50, :source :generator}
+{:type :info, :f :kill, :value {"n4" ""}, :time 67973533846, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 82, :time 68306845932, :process 29, :source :generator}
+{:type :invoke, :f :write, :value 53, :time 69648313166, :process 32, :source :generator}
+{:type :invoke, :f :write, :value 3, :time 69764328301, :process 50, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n5", :time 69934333978, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "server ID already in use", :execute-via "n5", :time 70830875290, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 71327075061, :process 41, :source :generator}
+{:type :ok, :f :write, :value 53, :time 71351354096, :process 32, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 71351440226, :process 29, :source :generator}
+{:type :ok, :f :write, :value 3, :time 71397843432, :process 50, :source :generator}
+{:type :info, :f :start-partition, :value {"n1" #{"n2" "n5" "n3"}, "n4" #{"n2" "n5" "n3"}, "n2" #{"n1" "n4"}, "n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}}, :time 71397910202, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n1" #{"n2" "n5" "n3"}, "n4" #{"n2" "n5" "n3"}, "n2" #{"n1" "n4"}, "n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}}], :time 71505663642, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 71867346110, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 72271935574, :process :nemesis, :source :generator}
+{:type :ok, :f :read, :value 3, :time 72631247208, :process 41, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 72641190156, :process 50, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 72643006337, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 72645533657, :process 32, :source :generator}
+{:type :ok, :f :read, :value 3, :time 72754562348, :process 29, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 73050250826, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 9, :time 74554365254, :process 23, :source :generator}
+{:type :invoke, :f :write, :value 4, :time 74556817311, :process 29, :source :generator}
+{:type :info, :f :add-server, :value "n4", :execute-via "n2", :time 74559417084, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "OK", :execute-via "n2", :time 75198487892, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 75920600107, :process 41, :source :generator}
+{:type :info, :f :read, :value nil, :time 75990452863, :process 50, :source :generator}
+{:type :info, :f :read, :value nil, :time 76053806146, :process 32, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 76295313392, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 76386626405, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 76386685086, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 76390224853, :process 37, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 76392514445, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 76607194361, :process 37, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 77607948727, :process 55, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 77661302322, :process 37, :source :generator}
+{:type :info, :f :kill, :value ("n4"), :time 77975042386, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 9, :time 78046599448, :process 23, :source :generator}
+{:type :info, :f :write, :value 4, :time 78102354228, :process 29, :source :generator}
+{:type :invoke, :f :write, :value 73, :time 78164906459, :process 28, :source :generator}
+{:type :info, :f :kill, :value {"n4" ""}, :time 78442768266, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 58, :time 78442824269, :process 34, :source :generator}
+{:type :info, :f :kill, :value ("n4"), :time 78525463491, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n4" ""}, :time 78798321306, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n1", :execute-via "n2", :time 78798357797, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 79338141627, :process 41, :source :generator}
+{:type :invoke, :f :write, :value 11, :time 79338212334, :process 46, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n2", :time 79822733782, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n5", :time 79822778752, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 81020020084, :process 55, :source :generator}
+{:type :invoke, :f :write, :value 17, :time 81020082658, :process 60, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n5", :time 81268764937, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 81268852604, :process 37, :source :generator}
+{:type :fail, :f :write, :value 17, :time 81268915198, :process 60, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 81268935709, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 73, :time 81569514839, :process 28, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 81722055693, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 58, :time 81905539557, :process 34, :source :generator}
+{:type :invoke, :f :write, :value 38, :time 81981993549, :process 39, :source :generator}
+{:type :info, :f :kill, :value ("n2" "n4"), :time 82039754987, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 30, :time 82159679412, :process 60, :source :generator}
+{:type :invoke, :f :write, :value 2, :time 82298982939, :process 33, :source :generator}
+{:type :info, :f :kill, :value {"n2" "", "n4" ""}, :time 82497421041, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 30, :time 82497485102, :process 60, :source :generator}
+{:type :info, :f :start-partition, :value {"n1" #{"n5" "n3"}, "n4" #{"n2" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n1" "n4"}, "n2" #{"n5" "n4"}}, :time 82497519120, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 43, :time 82505909055, :process 60, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n1" #{"n5" "n3"}, "n4" #{"n2" "n3"}, "n5" #{"n2" "n1"}, "n3" #{"n1" "n4"}, "n2" #{"n5" "n4"}}], :time 82509055927, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n1", :time 82509098992, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 11, :time 83005638829, :process 46, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 84165917566, :process 51, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 84173483700, :process 42, :source :generator}
+{:type :fail, :f :read, :value nil, :time 84402704261, :process 51, :source :generator}
+{:type :fail, :f :read, :value nil, :time 84458855247, :process 42, :source :generator}
+{:type :invoke, :f :write, :value 63, :time 84514490769, :process 42, :source :generator}
+{:type :invoke, :f :write, :value 32, :time 84517087466, :process 51, :source :generator}
+{:type :info, :f :write, :value 38, :time 85414531935, :process 39, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 85414776435, :process 44, :source :generator}
+{:type :fail, :f :read, :value nil, :time 85711185604, :process 44, :source :generator}
+{:type :info, :f :write, :value 2, :time 85830372048, :process 33, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n1", :time 85919727129, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 43, :time 85978820504, :process 60, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 86685055306, :process 65, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 86688551545, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 86694309889, :process 44, :source :generator}
+{:type :fail, :f :read, :value nil, :time 86962836674, :process 44, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 87094020625, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 44, :time 87757999996, :process 38, :source :generator}
+{:type :invoke, :f :write, :value 40, :time 87795896777, :process 44, :source :generator}
+{:type :info, :f :write, :value 63, :time 87886868951, :process 42, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 87886954491, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 32, :time 88305925280, :process 51, :source :generator}
+{:type :fail, :f :write, :value 40, :time 88306000404, :process 44, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 88306020997, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value ("n2" "n4" "n5" "n3" "n1"), :time 88306034585, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 29, :time 88352712350, :process 47, :source :generator}
+{:type :info, :f :kill, :value {"n2" "", "n4" "", "n5" "", "n3" "", "n1" ""}, :time 88619512808, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 78, :time 89877095580, :process 44, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 90016171689, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 84, :time 90067544256, :process 56, :source :generator}
+{:type :info, :f :read, :value nil, :time 90211907319, :process 65, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 90454251300, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 39, :time 90954457894, :process 70, :source :generator}
+{:type :info, :f :start-partition, :value {"n3" #{"n2" "n1"}, "n5" #{"n1" "n4"}, "n2" #{"n4" "n3"}, "n1" #{"n5" "n3"}, "n4" #{"n2" "n5"}}, :time 91015886236, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 44, :time 91329644703, :process 38, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n3" #{"n2" "n1"}, "n5" #{"n1" "n4"}, "n2" #{"n4" "n3"}, "n1" #{"n5" "n3"}, "n4" #{"n2" "n5"}}], :time 91329712930, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 43, :time 91329728826, :process 43, :source :generator}
+{:type :info, :f :remove-server, :value "n1", :execute-via "n1", :time 91469892838, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 29, :time 91885743522, :process 47, :source :generator}
+{:type :invoke, :f :write, :value 65, :time 93014645774, :process 52, :source :generator}
+{:type :info, :f :write, :value 78, :time 93178046376, :process 44, :source :generator}
+{:type :invoke, :f :write, :value 30, :time 93178144631, :process 49, :source :generator}
+{:type :info, :f :write, :value 84, :time 93447503445, :process 56, :source :generator}
+{:type :fail, :f :write, :value 65, :time 93458716467, :process 52, :source :generator}
+{:type :fail, :f :write, :value 30, :time 93723051176, :process 49, :source :generator}
+{:type :invoke, :f :write, :value 36, :time 93823024108, :process 49, :source :generator}
+{:type :invoke, :f :write, :value 96, :time 93825284864, :process 61, :source :generator}
+{:type :fail, :f :write, :value 36, :time 94038685363, :process 49, :source :generator}
+{:type :fail, :f :write, :value 96, :time 94090832280, :process 61, :source :generator}
+{:type :invoke, :f :write, :value 63, :time 94121610967, :process 49, :source :generator}
+{:type :invoke, :f :write, :value 5, :time 94142657086, :process 52, :source :generator}
+{:type :fail, :f :write, :value 63, :time 94334812761, :process 49, :source :generator}
+{:type :fail, :f :write, :value 5, :time 94386902874, :process 52, :source :generator}
+{:type :info, :f :write, :value 39, :time 94446256674, :process 70, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n1", :time 94798959007, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 43, :time 94910776022, :process 43, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 95566937145, :process 61, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 95573762033, :process 48, :source :generator}
+{:type :info, :f :kill, :value ("n5" "n2" "n1"), :time 95583719235, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n5" "", "n2" "", "n1" ""}, :time 95787304723, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 95798712960, :process 61, :source :generator}
+{:type :fail, :f :read, :value nil, :time 95874765726, :process 48, :source :generator}
+{:type :invoke, :f :write, :value 61, :time 96226815842, :process 48, :source :generator}
+{:type :invoke, :f :write, :value 67, :time 96229148662, :process 49, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 96231481432, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 96234633226, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n2", :execute-via "n1", :time 96234666541, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 0, :time 96348350274, :process 61, :source :generator}
+{:type :invoke, :f :write, :value 84, :time 96428322137, :process 75, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n1", :time 96550704372, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 96562278606, :process 52, :source :generator}
+{:type :fail, :f :write, :value 67, :time 96640734752, :process 49, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 96640797620, :process 49, :source :generator}
+{:type :fail, :f :write, :value 84, :time 96706750623, :process 75, :source :generator}
+{:type :fail, :f :write, :value 0, :time 96774499538, :process 61, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 97355022367, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 48, :time 97608084334, :process 75, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 97798022737, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 86, :time 97746016264, :process 61, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 97879568925, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" nil, "n2" nil, "n3" nil, "n4" nil, "n5" nil}, :time 98085338105, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 61, :time 99441401874, :process 48, :source :generator}
+{:type :info, :f :read, :value nil, :time 99837595796, :process 52, :source :generator}
+{:type :info, :f :read, :value nil, :time 99909505581, :process 49, :source :generator}
+{:type :info, :f :write, :value 48, :time 100899622048, :process 75, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n5", :time 101084034513, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 19, :time 101191283699, :process 57, :source :generator}
+{:type :info, :f :write, :value 86, :time 101253161441, :process 61, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n5", :time 101306615303, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 102047044089, :process 53, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 102087328637, :process 54, :source :generator}
+{:type :info, :f :kill, :value ("n1"), :time 102090640265, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" ""}, :time 102294446696, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 17, :time 102348862350, :process 66, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}, :time 102351687185, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 80, :time 102357004237, :process 80, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}], :time 102361064280, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 102361100614, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 19, :time 104405603173, :process 57, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 104405789017, :process 62, :source :generator}
+{:type :fail, :f :read, :value nil, :time 104637191716, :process 62, :source :generator}
+{:type :info, :f :read, :value nil, :time 105178405427, :process 53, :source :generator}
+{:type :info, :f :read, :value nil, :time 105450248226, :process 54, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 105838816098, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 17, :time 105846608072, :process 66, :source :generator}
+{:type :info, :f :write, :value 80, :time 105890911068, :process 80, :source :generator}
+{:type :invoke, :f :write, :value 15, :time 105976133531, :process 58, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 105978500118, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 87, :time 105980775851, :process 59, :source :generator}
+{:type :fail, :f :write, :value 15, :time 106186685507, :process 58, :source :generator}
+{:type :fail, :f :write, :value 87, :time 106238726414, :process 59, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 106382750156, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 7, :time 106609326560, :process 71, :source :generator}
+{:type :fail, :f :write, :value 7, :time 106853735026, :process 71, :source :generator}
+{:type :invoke, :f :write, :value 14, :time 106853791582, :process 85, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 106958898853, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 75, :time 107083950060, :process 62, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 107163857648, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 14, :time 107163909172, :process 85, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n5", :time 107163927990, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 75, :time 107346404510, :process 62, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n5", :time 107438448238, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 89, :time 107558764048, :process 71, :source :generator}
+{:type :invoke, :f :write, :value 1, :time 107629294247, :process 58, :source :generator}
+{:type :fail, :f :write, :value 89, :time 107787190518, :process 71, :source :generator}
+{:type :fail, :f :write, :value 1, :time 107890609757, :process 58, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 108180158224, :process 58, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 108277784687, :process 85, :source :generator}
+{:type :fail, :f :read, :value nil, :time 108480364492, :process 58, :source :generator}
+{:type :fail, :f :read, :value nil, :time 108502670478, :process 85, :source :generator}
+{:type :info, :f :kill, :value ("n1" "n4" "n3"), :time 109292717440, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n4" "", "n3" ""}, :time 109495596122, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 109565496929, :process 85, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 109672289986, :process 59, :source :generator}
+{:type :info, :f :kill, :value ["n1" "n2" "n3" "n4" "n5"], :time 109921264436, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 110138064785, :process 85, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}, :time 110213629064, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 110714933982, :process 59, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 111165756499, :process 58, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 111246281374, :process 62, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}, :time 111251282303, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}], :time 111255691836, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 111446699667, :process 62, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 112804434582, :process 71, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n4", :time 112834049760, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 112836906111, :process 62, :source :generator}
+{:type :invoke, :f :write, :value 34, :time 113070459122, :process 59, :source :generator}
+{:type :invoke, :f :write, :value 87, :time 113072116533, :process 85, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n4", :time 113146552726, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 34, :time 113307343346, :process 59, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 114080937528, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 114083332182, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 114083374979, :process 59, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 114085778884, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 114090894937, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 114470414028, :process 58, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 114608561768, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 115013648750, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 115799831513, :process 63, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 115802511312, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 116135242351, :process 71, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 116135326040, :process 76, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 116243900319, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n1" #{"n2" "n5" "n4" "n3"}, "n2" #{"n1"}, "n5" #{"n1"}, "n4" #{"n1"}, "n3" #{"n1"}}, :time 116243983026, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 87, :time 116394052810, :process 85, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n1" #{"n2" "n5" "n4" "n3"}, "n2" #{"n1"}, "n5" #{"n1"}, "n4" #{"n1"}, "n3" #{"n1"}}], :time 116438444894, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 116438493551, :process 62, :source :generator}
+{:type :info, :f :read, :value nil, :time 117529781976, :process 59, :source :generator}
+{:type :invoke, :f :write, :value 36, :time 117659588324, :process 90, :source :generator}
+{:type :info, :f :kill, :value ("n5" "n3" "n2"), :time 117810689421, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 62, :time 117878922323, :process 67, :source :generator}
+{:type :info, :f :kill, :value {"n5" "", "n3" "", "n2" ""}, :time 118035507931, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 118131589534, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 62, :time 118347779572, :process 67, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n1", :time 118485783935, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 54, :time 118683723805, :process 67, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 118811338628, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 54, :time 119002342757, :process 67, :source :generator}
+{:type :invoke, :f :write, :value 25, :time 119002397471, :process 67, :source :generator}
+{:type :info, :f :read, :value nil, :time 119229295116, :process 63, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 119273359663, :process 64, :source :generator}
+{:type :fail, :f :write, :value 25, :time 119297389372, :process 67, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 119297442241, :process 67, :source :generator}
+{:type :fail, :f :read, :value nil, :time 119482494494, :process 64, :source :generator}
+{:type :fail, :f :read, :value nil, :time 119554685201, :process 67, :source :generator}
+{:type :info, :f :read, :value nil, :time 119705544034, :process 76, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n2", :time 119724975876, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 119967630508, :process 68, :source :generator}
+{:type :fail, :f :read, :value nil, :time 120205380369, :process 68, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 120205437941, :process 64, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 120412523021, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 120486406233, :process 64, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 120527727881, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 36, :time 120941373573, :process 90, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 121981331720, :process 81, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 121984023118, :process 64, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 121986723300, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 121992898035, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n5", :time 121992939985, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 60, :time 122214726563, :process 68, :source :generator}
+{:type :invoke, :f :write, :value 49, :time 122261318136, :process 67, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n5", :time 122837239826, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 123571496285, :process 95, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n5", :time 123597566374, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n5", :time 124190584677, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 124190613280, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 124720756031, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value ("n3" "n1"), :time 124720873549, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n3" "", "n1" ""}, :time 124925538130, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n5", :time 124925636981, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n5", :time 125429524888, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}, :time 125429565759, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 125526430777, :process 81, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 125526478028, :process 86, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}], :time 125528834375, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 125594281923, :process 64, :source :generator}
+{:type :info, :f :write, :value 60, :time 125742649664, :process 68, :source :generator}
+{:type :info, :f :write, :value 49, :time 125806465805, :process 67, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n1", :time 126064200336, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 126656012090, :process 69, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 126719753821, :process 73, :source :generator}
+{:type :fail, :f :read, :value nil, :time 126870520769, :process 69, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n1", :time 126894781235, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 126921910432, :process 95, :source :generator}
+{:type :fail, :f :read, :value nil, :time 126950810125, :process 73, :source :generator}
+{:type :invoke, :f :write, :value 10, :time 128137607546, :process 72, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n4", :time 128181216374, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 61, :time 128560096245, :process 69, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n4", :time 128720231840, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 128828743377, :process 86, :source :generator}
+{:type :fail, :f :write, :value 61, :time 128870621812, :process 69, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n5", :time 129646023758, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 129800124542, :process 91, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 129920781883, :process 69, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n5", :time 130498715251, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 10, :time 131550409460, :process 72, :source :generator}
+{:type :invoke, :f :write, :value 68, :time 131661941631, :process 100, :source :generator}
+{:type :invoke, :f :write, :value 78, :time 131666947310, :process 73, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 131669263253, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 131672654504, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 133185723161, :process 91, :source :generator}
+{:type :info, :f :read, :value nil, :time 133485990331, :process 69, :source :generator}
+{:type :invoke, :f :write, :value 35, :time 133539311247, :process 74, :source :generator}
+{:type :invoke, :f :write, :value 20, :time 133557857805, :process 77, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 133560153162, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 35, :time 133742815380, :process 74, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 133965725065, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 42, :time 134515893706, :process 96, :source :generator}
+{:type :info, :f :remove-server, :value "n1", :execute-via "n4", :time 134615301098, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 11, :time 134617863745, :process 74, :source :generator}
+{:type :fail, :f :write, :value 42, :time 134730022819, :process 96, :source :generator}
+{:type :fail, :f :write, :value 11, :time 134830521359, :process 74, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n4", :time 134907232586, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 68, :time 135086308340, :process 100, :source :generator}
+{:type :info, :f :write, :value 78, :time 135378907322, :process 73, :source :generator}
+{:type :invoke, :f :write, :value 36, :time 135536567101, :process 74, :source :generator}
+{:type :info, :f :kill, :value ("n4" "n5"), :time 135539237987, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 38, :time 135542040756, :process 96, :source :generator}
+{:type :info, :f :kill, :value {"n4" "", "n5" ""}, :time 135742487979, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 38, :time 135774810337, :process 96, :source :generator}
+{:type :invoke, :f :write, :value 61, :time 136218756385, :process 96, :source :generator}
+{:type :info, :f :remove-server, :value "n4", :execute-via "n1", :time 136261270706, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 4, :time 136263543994, :process 105, :source :generator}
+{:type :fail, :f :write, :value 61, :time 136446581102, :process 96, :source :generator}
+{:type :invoke, :f :write, :value 49, :time 136768225613, :process 96, :source :generator}
+{:type :invoke, :f :write, :value 63, :time 136928219659, :process 78, :source :generator}
+{:type :info, :f :write, :value 20, :time 137055186302, :process 77, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n1", :time 137275452877, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 79, :time 137625977166, :process 82, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n1" "n3"}, "n5" #{"n4" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n5"}, "n4" #{"n5" "n1"}}, :time 137685317793, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n1" "n3"}, "n5" #{"n4" "n3"}, "n1" #{"n2" "n4"}, "n3" #{"n2" "n5"}, "n4" #{"n5" "n1"}}], :time 137782403437, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 138376481178, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 138779814544, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 138779864459, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 36, :time 138941439850, :process 74, :source :generator}
+{:type :invoke, :f :write, :value 94, :time 138941497229, :process 79, :source :generator}
+{:type :info, :f :start, :value {"n1" nil, "n2" nil, "n3" nil, "n4" nil, "n5" nil}, :time 139072652969, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n4", :time 139072735534, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n4", :time 139362950449, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 4, :time 139733204186, :process 105, :source :generator}
+{:type :info, :f :kill, :value ["n1" "n2" "n3" "n4" "n5"], :time 140053971534, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 49, :time 140244346113, :process 96, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" "", "n3" "", "n4" "", "n5" ""}, :time 140310595514, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 140272333287, :process 110, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 140342879374, :process 101, :source :generator}
+{:type :info, :f :kill, :value ("n3"), :time 140431854361, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 63, :time 140540865560, :process 78, :source :generator}
+{:type :fail, :f :read, :value nil, :time 140540952545, :process 110, :source :generator}
+{:type :fail, :f :read, :value nil, :time 140606608282, :process 101, :source :generator}
+{:type :info, :f :kill, :value {"n3" ""}, :time 140710668843, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 140731890468, :process 83, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 140749715914, :process 110, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 140753309312, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 140954602851, :process 83, :source :generator}
+{:type :fail, :f :read, :value nil, :time 141026739867, :process 110, :source :generator}
+{:type :info, :f :write, :value 79, :time 141049378682, :process 82, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 141157842402, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 94, :time 142341744858, :process 79, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 142411579276, :process 83, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 142415536916, :process 110, :source :generator}
+{:type :info, :f :kill, :value ("n1" "n2"), :time 142616564351, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" "", "n2" ""}, :time 142819554810, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 143742176533, :process 87, :source :generator}
+{:type :info, :f :kill, :value ("n4" "n5" "n1" "n2" "n3"), :time 143744488261, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 143747521110, :process 84, :source :generator}
+{:type :info, :f :kill, :value {"n4" "", "n5" "", "n1" "", "n2" "", "n3" ""}, :time 143948044180, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 144026703815, :process 84, :source :generator}
+{:type :invoke, :f :write, :value 83, :time 144896492632, :process 101, :source :generator}
+{:type :invoke, :f :write, :value 42, :time 144983938078, :process 84, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 144986304068, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 144988884181, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 145001601317, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n2", :time 145600534562, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n4", :time 145600581220, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n4", :time 145810716111, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 145938072727, :process 83, :source :generator}
+{:type :info, :f :start-partition, :value {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}, :time 145839539744, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n2" #{"n5" "n4" "n3"}, "n1" #{"n5" "n4" "n3"}, "n5" #{"n2" "n1"}, "n4" #{"n2" "n1"}, "n3" #{"n2" "n1"}}], :time 146008839899, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n1" #{"n2" "n5" "n4"}, "n3" #{"n2" "n5" "n4"}, "n2" #{"n1" "n3"}, "n5" #{"n1" "n3"}, "n4" #{"n1" "n3"}}, :time 146008893696, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 146106808072, :process 110, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n1" #{"n2" "n5" "n4"}, "n3" #{"n2" "n5" "n4"}, "n2" #{"n1" "n3"}, "n5" #{"n1" "n3"}, "n4" #{"n1" "n3"}}], :time 146152787417, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 146166947947, :process 115, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 146175219636, :process 88, :source :generator}
+{:type :info, :f :read, :value nil, :time 147074228596, :process 87, :source :generator}
+{:type :info, :f :write, :value 83, :time 148000280034, :process 101, :source :generator}
+{:type :info, :f :write, :value 42, :time 148087341557, :process 84, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 148275795433, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 9, :time 148354586708, :process 106, :source :generator}
+{:type :fail, :f :write, :value 9, :time 148670597434, :process 106, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 148679889593, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 149587564252, :process 115, :source :generator}
+{:type :info, :f :read, :value nil, :time 149681317856, :process 88, :source :generator}
+{:type :invoke, :f :write, :value 35, :time 149779180350, :process 120, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 149790772662, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 32, :time 149855576475, :process 106, :source :generator}
+{:type :fail, :f :write, :value 35, :time 150228065660, :process 120, :source :generator}
+{:type :fail, :f :write, :value 32, :time 150228145459, :process 106, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 150235520965, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 151351003278, :process 120, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 151359572736, :process 92, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 151363067709, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 151366757832, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 151562701632, :process 120, :source :generator}
+{:type :fail, :f :read, :value nil, :time 151622984917, :process 92, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 153259027820, :process 92, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 153260778959, :process 89, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 153263231448, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n2", :time 153530396621, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 153582681394, :process 89, :source :generator}
+{:type :fail, :f :read, :value nil, :time 153686833193, :process 92, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 154967831632, :process 106, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 154969970410, :process 93, :source :generator}
+{:type :info, :f :kill, :value ("n2"), :time 154972244878, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n2" ""}, :time 155175056226, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 155182601881, :process 106, :source :generator}
+{:type :fail, :f :read, :value nil, :time 155223827467, :process 93, :source :generator}
+{:type :invoke, :f :write, :value 65, :time 155710174522, :process 92, :source :generator}
+{:type :info, :f :remove-server, :value "n2", :execute-via "n2", :time 155737253940, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 65, :time 155943723766, :process 92, :source :generator}
+{:type :invoke, :f :write, :value 13, :time 155943779108, :process 93, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n2", :time 156067269539, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 58, :time 156132452797, :process 106, :source :generator}
+{:type :invoke, :f :write, :value 90, :time 156173126016, :process 92, :source :generator}
+{:type :fail, :f :write, :value 13, :time 156240389751, :process 93, :source :generator}
+{:type :fail, :f :write, :value 58, :time 156342572718, :process 106, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}}, :time 156684675478, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n2" "n4"}, "n1" #{"n2" "n4"}, "n2" #{"n5" "n1"}, "n4" #{"n5" "n1"}}], :time 156882487538, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 22, :time 157219250373, :process 106, :source :generator}
+{:type :info, :f :start-partition, :value {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}, :time 157252764547, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n4" #{"n2" "n5" "n1" "n3"}, "n2" #{"n4"}, "n5" #{"n4"}, "n1" #{"n4"}, "n3" #{"n4"}}], :time 157427991253, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 24, :time 157428044303, :process 93, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 159198974325, :process 89, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 159319248688, :process 120, :source :generator}
+{:type :info, :f :write, :value 90, :time 159625521903, :process 92, :source :generator}
+{:type :info, :f :write, :value 22, :time 160518990749, :process 106, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 160579807378, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 160631143593, :process 97, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 160757250464, :process 111, :source :generator}
+{:type :fail, :f :read, :value nil, :time 160858685841, :process 97, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 160858727151, :process 97, :source :generator}
+{:type :info, :f :write, :value 24, :time 160929655435, :process 93, :source :generator}
+{:type :fail, :f :read, :value nil, :time 160933377531, :process 111, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 160983709366, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 161310347094, :process 98, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 161313527464, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 161317061768, :process 111, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" nil, "n4" :started, "n5" :started}, :time 161718832048, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 161718880305, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n2", :time 162212309193, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value ("n1"), :time 162212347852, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value {"n1" ""}, :time 162526834771, :process :nemesis, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n5", :time 162526963234, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 162552737371, :process 89, :source :generator}
+{:type :invoke, :f :write, :value 62, :time 162552794720, :process 94, :source :generator}
+{:type :info, :f :read, :value nil, :time 162585630254, :process 120, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n5", :time 162762505554, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 62, :time 162826709113, :process 94, :source :generator}
+{:type :invoke, :f :write, :value 73, :time 163049127416, :process 94, :source :generator}
+{:type :invoke, :f :write, :value 67, :time 163051370214, :process 125, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 163053460473, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 163058324004, :process :nemesis, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 164034547959, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 164101627709, :process 97, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" nil, "n4" :started, "n5" :started}, :time 164440336686, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 164589794480, :process 111, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 164658636252, :process 102, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 164662032304, :process 116, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 164664775747, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 164730369704, :process 98, :source :generator}
+{:type :fail, :f :read, :value nil, :time 164918567998, :process 116, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" nil, "n3" nil, "n4" nil, "n5" :started}, :time 165068678570, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 67, :time 166213497427, :process 125, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 166222670329, :process 116, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n4", :time 166265803589, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 166355149574, :process 130, :source :generator}
+{:type :info, :f :write, :value 73, :time 166834308434, :process 94, :source :generator}
+{:type :info, :f :add-server, :value nil, :execute-via "n4", :time 166834389797, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}, "n1" #{"n5" "n3"}, "n4" #{"n5" "n3"}}, :time 166834406739, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n1" "n4"}, "n3" #{"n1" "n4"}, "n1" #{"n5" "n3"}, "n4" #{"n5" "n3"}}], :time 167037616385, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 167037670733, :process 103, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 167282597569, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 167384086894, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 167384137274, :process :nemesis, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 167804788334, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 167804839208, :process 99, :source :generator}
+{:type :info, :f :read, :value nil, :time 168015824501, :process 102, :source :generator}
+{:type :info, :f :remove-server, :value "n5", :execute-via "n1", :time 168016973819, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 168139560260, :process 99, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 168139618716, :process 99, :source :generator}
+{:type :invoke, :f :write, :value 35, :time 168600380576, :process 107, :source :generator}
+{:type :fail, :f :write, :value 35, :time 168883065158, :process 107, :source :generator}
+{:type :info, :f :remove-server, :value "a configuration change is already in progress", :execute-via "n1", :time 169059644475, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 26, :time 169445761788, :process 107, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n2", :time 169621330426, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 169685125790, :process 116, :source :generator}
+{:type :invoke, :f :write, :value 2, :time 169685196129, :process 121, :source :generator}
+{:type :info, :f :read, :value nil, :time 169877435627, :process 130, :source :generator}
+{:type :info, :f :read, :value nil, :time 170333465055, :process 103, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n2", :time 170439155632, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 66, :time 170644860450, :process 135, :source :generator}
+{:type :info, :f :start-partition, :value {"n3" #{"n2" "n5" "n1" "n4"}, "n2" #{"n3"}, "n5" #{"n3"}, "n1" #{"n3"}, "n4" #{"n3"}}, :time 170704853977, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n3" #{"n2" "n5" "n1" "n4"}, "n2" #{"n3"}, "n5" #{"n3"}, "n1" #{"n3"}, "n4" #{"n3"}}], :time 170789109803, :process :nemesis, :source :generator}
+{:type :info, :f :kill, :value ("n3"), :time 170789175153, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 54, :time 170930665650, :process 108, :source :generator}
+{:type :info, :f :kill, :value {"n3" ""}, :time 171114348606, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 54, :time 171302230245, :process 108, :source :generator}
+{:type :info, :f :read, :value nil, :time 171425885171, :process 99, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 171557754357, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 80, :time 171562082135, :process 108, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 171960966373, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 172567967515, :process 104, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 172622553714, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 172770991755, :process 104, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 172771259026, :process 104, :source :generator}
+{:type :info, :f :write, :value 26, :time 172849926164, :process 107, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 173028397306, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 2, :time 173130019308, :process 121, :source :generator}
+{:type :invoke, :f :write, :value 31, :time 173928305733, :process 112, :source :generator}
+{:type :info, :f :write, :value 66, :time 174017095431, :process 135, :source :generator}
+{:type :info, :f :stop-partition, :value nil, :time 174017165006, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 26, :time 174022093151, :process 140, :source :generator}
+{:type :info, :f :stop-partition, :value :network-healed, :time 174025246125, :process :nemesis, :source :generator}
+{:type :fail, :f :write, :value 26, :time 174314573832, :process 140, :source :generator}
+{:type :info, :f :kill, :value ("n3" "n2" "n4"), :time 174789381348, :process :nemesis, :source :generator}
+{:type :info, :f :write, :value 80, :time 174890792020, :process 108, :source :generator}
+{:type :info, :f :kill, :value {"n3" "", "n2" "", "n4" ""}, :time 174996195685, :process :nemesis, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 175284203013, :process 113, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 175312597888, :process 140, :source :generator}
+{:type :info, :f :add-server, :value "n3", :execute-via "n5", :time 175315153777, :process :nemesis, :source :generator}
+{:type :info, :f :add-server, :value "a configuration change is already in progress", :execute-via "n5", :time 175598795549, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 176166079872, :process 104, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 176244727583, :process 126, :source :generator}
+{:type :info, :f :kill, :value ("n2" "n3" "n1"), :time 176284808160, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 176457891805, :process 126, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 176457943422, :process 126, :source :generator}
+{:type :info, :f :kill, :value {"n2" "", "n3" "", "n1" ""}, :time 176581647783, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}, :time 176581696745, :process :nemesis, :source :generator}
+{:type :info, :f :start-partition, :value [:isolated {"n5" #{"n2" "n1" "n4" "n3"}, "n2" #{"n5"}, "n1" #{"n5"}, "n4" #{"n5"}, "n3" #{"n5"}}], :time 176960110110, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 76, :time 177217675404, :process 109, :source :generator}
+{:type :info, :f :write, :value 31, :time 177289777397, :process 112, :source :generator}
+{:type :fail, :f :write, :value 76, :time 177442604745, :process 109, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 178451709380, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 84, :time 178467075759, :process 117, :source :generator}
+{:type :info, :f :read, :value nil, :time 178569709077, :process 113, :source :generator}
+{:type :info, :f :read, :value nil, :time 178831788263, :process 140, :source :generator}
+{:type :fail, :f :write, :value 84, :time 178831856707, :process 117, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 178855413265, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 39, :time 179203313513, :process 118, :source :generator}
+{:type :fail, :f :write, :value 39, :time 179464857891, :process 118, :source :generator}
+{:type :info, :f :start, :value ["n1" "n2" "n3" "n4" "n5"], :time 179464912729, :process :nemesis, :source :generator}
+{:type :invoke, :f :write, :value 14, :time 179536359342, :process 117, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 179602210053, :process 109, :source :generator}
+{:type :fail, :f :write, :value 14, :time 179790695598, :process 117, :source :generator}
+{:type :fail, :f :read, :value nil, :time 179817986802, :process 109, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 179883638045, :process 117, :source :generator}
+{:type :info, :f :start, :value {"n1" :started, "n2" :started, "n3" :started, "n4" :started, "n5" :started}, :time 179957346420, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 179957446406, :process 126, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 179957510758, :process 145, :source :generator}
+{:type :fail, :f :read, :value nil, :time 180119638177, :process 117, :source :generator}
+{:type :info, :f :remove-server, :value "n1", :execute-via "n5", :time 180119715049, :process :nemesis, :source :generator}
+{:type :fail, :f :read, :value nil, :time 180389499077, :process 145, :source :generator}
+{:type :invoke, :f :read, :value nil, :time 180389557864, :process 109, :source :generator}
+{:type :info, :f :remove-server, :value nil, :execute-via "n5", :time 180525165902, :process :nemesis, :source :generator}
+{:type :info, :f :read, :value nil, :time 183823075775, :process 109, :source :generator}
